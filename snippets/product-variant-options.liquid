@@ -60,7 +60,7 @@
       {% endif %}
     >
     {% if option.name == "Color" %}
-      <label style="background-image:url({{ value | append: '.png' | file_url }})" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+      <label class="color-node" style="background-image:url({{ value | append: '.png' | file_url }})" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
       </label>      
       {% else %}
